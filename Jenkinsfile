@@ -15,6 +15,11 @@ pipeline {
                     sh 'docker build -t tech-blog .'
                 }
                 
+           stage('Run Docker Container') {
+      		steps {
+			sh 'docker run --name tech-blog -d -p 8080:80 tech-blog'      
+                
+                
             }
         }   
       }
