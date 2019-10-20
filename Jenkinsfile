@@ -6,5 +6,10 @@ pipeline {
                 echo 'Running build automation'
             }
         }   
+         stage('Build') {
+            steps {
+                echo 'Testing second stage!'
+            }
+        }   
       }
 }
