@@ -10,7 +10,9 @@ pipeline {
           
 	    stage('Remove old Docker Container') {
       		steps {
-			sh 'docker container rm tech-blog -f'
+			script {
+				sh 'docker container rm tech-blog -f'
+			}
       }
     }
         
