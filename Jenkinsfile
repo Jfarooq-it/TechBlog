@@ -9,9 +9,12 @@ pipeline {
         }   
           
         
-        stage('Test') {
+        stage('Build Docker Image') {
             steps {
-                echo 'Testing second stage!'
+                script {
+                    sh 'docker build . -t tech-blog'
+                }
+                
             }
         }   
       }
