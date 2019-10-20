@@ -6,6 +6,6 @@ pipeline {
             steps {
                 echo 'Running build automation'
             }
-        }
-            }
+        }   
+      }
 }
