@@ -27,7 +27,7 @@ pipeline {
 	stage('Run Docker Container') {
       	    steps {
 		    script {
-			sh 'docker run --name tech-blog -d -p 8080:80 tech-blog'      
+			sh 'docker run --name tech-blog -d -p 8070:80 tech-blog'      
 		}
                 
             }
