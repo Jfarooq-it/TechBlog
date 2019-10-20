@@ -8,6 +8,11 @@ pipeline {
             }
         }   
           
+	    stage('Remove old Docker Container') {
+      		steps {
+			sh 'docker container rm tech-blog -f'
+      }
+    }
         
         stage('Build Docker Image') {
             steps {
